@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-Cy-N0h">
-                                <rect key="frame" x="0.0" y="7" width="450" height="600"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-Cy-N0h">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -29,6 +30,12 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zwy-Cy-N0h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3jP-NU-WTG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Zwy-Cy-N0h" secondAttribute="bottom" id="HqF-LG-kzm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zwy-Cy-N0h" secondAttribute="trailing" id="SMQ-bX-vys"/>
+                            <constraint firstItem="Zwy-Cy-N0h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="efO-tv-aTj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="gameView" destination="Zwy-Cy-N0h" id="uHH-TY-Jj9"/>
